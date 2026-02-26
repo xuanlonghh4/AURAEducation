@@ -38,6 +38,7 @@ body{
     font-family: 'Exo 2', sans-serif;
     background-color: #0a0a0a;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 /* audio */
@@ -1174,5 +1175,6 @@ a{
         transform: scale(0.9);
     }
 }
+
 
 

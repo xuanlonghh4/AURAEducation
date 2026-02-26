@@ -1137,20 +1137,11 @@ a{
 /* res... */
 
 @media (max-width: 768px) {
-    .features-box, .about-our-box, .products-box, .service, .contact-container, .service-hood {
-      flex-direction: column; 
-    }
-    .features-box > div, .about-our-box > div, .products-box > div, .service > div, .contact-container > div, .service-hood > div{
-        width: 100%;
-    }
 
-    .butterfly{
-        opacity: 0;
+    body{
+        overflow-x: hidden;
     }
     
-}
-
-@media (max-width: 900px) {
     .features-box, .about-our-box, .products-box, .service, .contact-container, .service-hood {
       flex-direction: column; 
     }
@@ -1174,7 +1165,41 @@ a{
     .service-hood{
         transform: scale(0.9);
     }
+    
 }
+
+@media (max-width: 900px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .features-box, .about-our-box, .products-box, .service, .contact-container, .service-hood {
+      flex-direction: column; 
+    }
+    .features-box > div, .about-our-box > div, .products-box > div, .service > div, .contact-container > div, .service-hood > div{
+        width: 100%;
+    }
+
+    .butterfly{
+        opacity: 0;
+    }
+
+    .features-item-1, .features-item-2, .features-item-3, .features-item-4{
+        transform: rotateY(0);
+    }
+
+    .about-content{
+        border-top: 3px solid var(--neon-cyan);
+        border-bottom: 3px solid var(--neon-cyan);
+    }
+
+    .service-hood{
+        transform: scale(0.9);
+    }
+    
+}
+
 
 
 
